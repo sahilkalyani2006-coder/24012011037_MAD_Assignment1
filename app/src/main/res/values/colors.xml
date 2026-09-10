@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#315E8A</color>
+    <color name="background">#FAFAFA</color>
+    <color name="text">#20252B</color>
+    <color name="secondary_text">#555D65</color>
+    <color name="divider">#DDE1E5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="map_background">#EFF4EA</color>
+</resources>

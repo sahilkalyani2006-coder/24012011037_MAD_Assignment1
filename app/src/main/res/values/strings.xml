@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">24012011037_MAD_Assignment1</string>
+    <string name="screen_title">Campus Route Finder</string>
+    <string name="campus_name">Ganpat University, Kherva</string>
+    <string name="intro">Choose where you are starting and where you want to go.</string>
+    <string name="start_label">Starting point</string>
+    <string name="destination_label">Destination</string>
+    <string name="swap_places">Swap places</string>
+    <string name="show_route">Show route on campus map</string>
+    <string name="choose_and_show">Choose two places, then tap Show route.</string>
+    <string name="route_result">Blue route: %1$s → %2$s</string>
+    <string name="no_route">No connected path was found.</string>
+    <string name="fit_map">Fit</string>
+    <string name="map_help">Drag or pinch the built-in map. Numbers match the place list below. Building entrances and paths are approximate.</string>
+    <string name="map_description">Offline schematic map of Ganpat University campus</string>
+    <string name="same_place">You selected the same starting point and destination.</string>
+</resources>

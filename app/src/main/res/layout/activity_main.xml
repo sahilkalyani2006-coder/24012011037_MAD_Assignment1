@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView style="@style/ScreenTitle" android:text="@string/screen_title" />
+        <TextView style="@style/BodyText" android:text="@string/campus_name" />
+        <TextView style="@style/BodyText" android:layout_marginTop="20dp" android:text="@string/intro" />
+        <TextView
+            style="@style/BodyText"
+            android:layout_marginTop="20dp"
+            android:labelFor="@id/startSpinner"
+            android:text="@string/start_label" />
+        <Spinner
+            android:id="@+id/startSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:saveEnabled="false"
+            android:spinnerMode="dialog"
+            android:prompt="@string/start_label" />
+        <TextView style="@style/BodyText" android:labelFor="@id/destinationSpinner" android:text="@string/destination_label" />
+        <Spinner
+            android:id="@+id/destinationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:saveEnabled="false"
+            android:spinnerMode="dialog"
+            android:prompt="@string/destination_label" />
+        <Button
+            android:id="@+id/swapButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/swap_places"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+        <Button android:id="@+id/routeButton" style="@style/MainButton" android:text="@string/show_route" />
+        <TextView
+            android:id="@+id/statusText"
+            style="@style/BodyText"
+            android:text="@string/choose_and_show" />
+        <com.example.madassignment1.CampusMapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/map_background"
+            android:contentDescription="@string/map_description" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button android:id="@+id/zoomOutButton" style="@style/MapButton" android:text="−" />
+            <Button android:id="@+id/fitButton" style="@style/MapButton" android:text="@string/fit_map" />
+            <Button android:id="@+id/zoomInButton" style="@style/MapButton" android:text="+" />
+        </LinearLayout>
+        <TextView style="@style/BodyText" android:text="@string/map_help" />
+        <TextView
+            android:id="@+id/legendText"
+            style="@style/BodyText"
+            android:lineSpacingExtra="3dp"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+</ScrollView>
