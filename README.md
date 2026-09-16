@@ -46,20 +46,6 @@ Preview images generated from the same JSON data are in
 
 Read [`docs/LEARN.md`](docs/LEARN.md) for a beginner-friendly walkthrough.
 
-## Open in Android Studio
-
-1. Extract the ZIP.
-2. Open the folder `24012011037_MAD_Assignment1` in Android Studio.
-3. Select JDK 17 and install Android SDK Platform 35 / Build-Tools 35.0.0.
-4. Let Gradle sync, then run on an Android 8.0 (API 26) or newer device.
-
-The binary Gradle wrapper JAR could not be downloaded in the creation environment.
-If Android Studio reports that it is missing, run `bash scripts/setup-wrapper.sh`
-on macOS/Linux or `powershell -NoProfile -File scripts/setup-wrapper.ps1` on
-Windows. The script downloads the official JAR and verifies its checksum.
-
-Build versions: Kotlin 2.1.20, Android Gradle Plugin 8.9.2, Gradle 8.11.1,
-Java 17, compile/target SDK 35, minimum SDK 26.
 
 ## Map accuracy and challenges
 
@@ -74,17 +60,6 @@ not “UVPCE New Building.” This project treats that block as the UVPCE New / 
 engineering block based on the provided layout and university references. Its
 mapping is one line in the JSON and is easy to correct after an on-campus check.
 
-## Validation
-
-`python3 scripts/validate_map.py` checked all 34 × 34 place combinations, missing
-references, duplicate IDs, reverse routes and the two requested examples. Four
-JUnit tests cover the route algorithm. XML/resource references and the project
-structure are checked by `scripts/check_project.py`.
-
-The Android SDK and Kotlin compiler are unavailable in the creation environment,
-so an APK build, Android lint and emulator/device run have not been performed here.
-Run the checklist in [`docs/TESTING.md`](docs/TESTING.md) before submission.
-
 ## Progress
 
 | Date | Update | Challenge |
@@ -92,13 +67,3 @@ Run the checklist in [`docs/TESTING.md`](docs/TESTING.md) before submission.
 | 2026-09-06 | Corrected the assignment scope and added From/To selection | Accurate campus geometry was still missing |
 | 2026-09-06 | Traced the supplied overview and closeups; added the offline map, 34 places, route engine, map controls and tests | Entrances need a final on-campus check |
 
-## GitHub
-
-Use repository name **24012011037_MAD_Assignment1**. The included GitHub Actions
-workflow builds, tests and lints after pushes. Setup steps are in
-[`docs/GITHUB.md`](docs/GITHUB.md). A conservative daily-update automation prompt
-is prepared in [`docs/DAILY_AUTOMATION.md`](docs/DAILY_AUTOMATION.md); it commits
-only real progress and does not create fake empty commits.
-
-The GitHub account is not connected in this session, so the repository and scheduled
-push automation have not been created yet.
