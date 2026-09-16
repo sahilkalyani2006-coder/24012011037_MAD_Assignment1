@@ -270,8 +270,8 @@ The application intentionally avoids external services.
                                ▼
 User ──→ MainActivity ──→ RouteFinder
              │                 │
-             │                 ▼
-             │          Dijkstra Algorithm
+             │                 |
+             │                 |
              │                 │
              ▼                 ▼
        CampusMapView ←── Calculated Path
@@ -312,13 +312,7 @@ Therefore, this application should be considered an **educational campus guide r
 
 The application also does not report invented real-world distances. Route selection is based on the connectivity and relative geometry represented in the local dataset.
 
-### Campus Naming Note
 
-The supplied screenshot labels the large southeast block as **Maritime Studies and fotonVR**, rather than "UVPCE New Building."
-
-For the current assignment implementation, this block is represented as the **UVPCE New / new engineering block** based on the provided layout and university references.
-
-This mapping is stored in the JSON dataset, so it can be easily corrected after an on-campus verification.
 
 ---
 
@@ -372,16 +366,6 @@ Possible improvements for a future version include:
 - Favorite / recently used locations.
 - Dynamic campus data updates.
 - Optional online map synchronization.
-
----
-
-# Learning Documentation
-
-A beginner-friendly explanation of the implementation is available in:
-
-[`docs/LEARN.md`](docs/LEARN.md)
-
-It explains the major classes, data flow, graph representation, route calculation, and map rendering in simpler terms.
 
 ---
 
