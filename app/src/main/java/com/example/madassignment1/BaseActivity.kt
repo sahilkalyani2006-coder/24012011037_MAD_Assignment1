@@ -10,7 +10,6 @@ open class BaseActivity : Activity() {
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
 
-        // Android 15 draws behind system bars. Keep our buttons and keyboard apart.
         if (Build.VERSION.SDK_INT >= 35) {
             val content = findViewById<View>(android.R.id.content)
             content.setOnApplyWindowInsetsListener { view, insets ->
